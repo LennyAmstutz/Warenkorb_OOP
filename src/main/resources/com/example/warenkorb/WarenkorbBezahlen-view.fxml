@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="351.0" prefWidth="261.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.warenkorb.WarenkorbBezahlenController">
+   <children>
+      <TextArea fx:id="textAreaOrderDetails" layoutX="33.0" layoutY="57.0" prefHeight="200.0" prefWidth="200.0" />
+      <Label layoutX="33.0" layoutY="21.0" prefHeight="36.0" prefWidth="88.0" text="Warenkorb">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="270.0" text="Gesamtsumme:" />
+      <TextField layoutX="131.0" layoutY="266.0" prefHeight="26.0" prefWidth="102.0" />
+      <Button layoutX="33.0" layoutY="301.0" mnemonicParsing="false" onAction="#Warenkorbschliesen" prefHeight="26.0" prefWidth="200.0" text="Abbrechen" />
+   </children>
+</AnchorPane>

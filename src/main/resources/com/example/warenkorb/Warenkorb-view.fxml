@@ -4,7 +4,7 @@
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -17,19 +17,20 @@
             <Font size="14.0" />
          </font>
       </Label>
-      <Button layoutX="56.0" layoutY="185.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="247.0" text="Zum Warenkorb Hinzufügen" />
+      <Button layoutX="56.0" layoutY="185.0" mnemonicParsing="false" onAction="#warenkorbHinzufügen" prefHeight="26.0" prefWidth="247.0" text="Zum Warenkorb Hinzufügen" />
       <ComboBox fx:id="comboBoxProducts" layoutX="152.0" layoutY="111.0" onAction="#fillComboBox" prefWidth="150.0" />
       <Label layoutX="56.0" layoutY="148.0" prefHeight="26.0" prefWidth="63.0" text="Anzahl:">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Hyperlink layoutX="246.0" layoutY="22.0" text="Warenkorb anzeigen" />
+      <Hyperlink fx:id="WarenkorbLink" layoutX="246.0" layoutY="22.0" text="Warenkorb anzeigen" />
       <ImageView fitHeight="26.0" fitWidth="30.0" layoutX="212.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../../../../../../../../../Downloads/istockphoto-1206806317-612x612.jpg" />
          </image>
       </ImageView>
-      <Spinner layoutX="152.0" layoutY="148.0" prefHeight="26.0" prefWidth="150.0" />
+      <TextField fx:id="textFieldMenge" layoutX="152.0" layoutY="148.0" prefHeight="26.0" prefWidth="150.0" />
+      <Label fx:id="LabelFehlermeldung" layoutX="56.0" layoutY="236.0" prefHeight="17.0" prefWidth="247.0" />
    </children>
 </AnchorPane>

@@ -3,7 +3,6 @@ module com.example.warenkorb {
     requires javafx.fxml;
     requires java.sql;
 
-
     opens com.example.warenkorb to javafx.fxml;
     exports com.example.warenkorb;
 }
